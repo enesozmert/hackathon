@@ -7,9 +7,14 @@
 
 
 
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
+- Ödeme
+- Exchange
+- Onay
+- Kargo
+- İade
+- Kullanıcı
+- Escrow
+- Data
 
 ## Features
 
