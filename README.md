@@ -1,6 +1,6 @@
 # Klasik E-Ticaret sistemini Modern E-Ticaret sistemelere entegrasyonu.
 # Blockchain sisteminin somut ürünlere entegre edilmesi.
-## Gerçek dünyada ki ürünlerin nft ve metaverse sisteminde blockchain ile takibi, satışı, escrow sistemi ve kullanıcı ve satıcı güvenliği ve memnuniyetinin klasik e-ticaret sistemlerine entegrasyonu.
+## Gerçek dünyada ki ürünlerin nft ve metaverse sisteminde blockchain ile takibi, satışı, escrow sistemi, kullanıcı, satıcı güvenliği ve memnuniyetinin klasik e-ticaret sistemlerine entegrasyonu.
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
