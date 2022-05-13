@@ -1,4 +1,5 @@
-# Klasik ve Moder E-Ticaret satış entegrasyonu.
+# Klasiği Modern E-Ticaret sistemelere entegrasyonu.
+# Blockchain sisteminin somut ürünlere entegre edilmesi.
 ## Gerçek dünyada ki ürünlerin nft ve metaverse sisteminde blockchain ile takibi, satışı, escrow sistemi ve kullanıcı ve satıcı güvenliği ve memnuniyetinin klasik e-ticaret sistemlerine entegrasyonu.
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
@@ -36,9 +37,7 @@ As [John Gruber] writes on the [Markdown site][df1]
 > looking like it's been marked up with tags
 > or formatting instructions.
 
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
+Blockchain sisteminin somut ürünlere entegre edilmesi. Eski e-ticaret sistemlerinin metaverse ve yeni e-ticaret sistemleri ile etragsyonudur.
 
 ## Tech
 
