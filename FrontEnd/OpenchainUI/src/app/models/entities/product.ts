@@ -1,9 +1,9 @@
-export interface Product
-{
+export interface  Product {
   productId:number;
   categoryId:number;
   productName:string;
-  unisInStock:number;
+  unitsInStock:number;
+  unitPrice:number;
   serialNumber:string;
   imagePath:string;
 }

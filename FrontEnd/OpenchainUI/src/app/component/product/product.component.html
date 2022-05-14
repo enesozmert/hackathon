@@ -1,0 +1,23 @@
+<div class="mb-3">
+  <label for="filterText" class="form-label">Serach product</label>
+  <input type="text" class="form-control" [(ngModel)]="filterText" id="filterText" placeholder="Name">
+</div>
+<div *ngIf="filterText" class="alert alert-danger">
+  {{filterText}} aradınız
+</div>
+<div class="d-flex justify-content-center">
+  <div *ngIf="dataLoaded==false" class="spinner-grow text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<div class="row h-50" *ngIf="dataLoaded!=false">
+<div class="col-sm-12 h-10 d-table">
+    <div class="card card-block d-table-cell align-middle text-center border-0 p-2">
+        <div *ngFor="let product of products | filterPipe:filterText" style="display:inline;position: relative;margin: 3px 3px 3px 3px;text-align: center;">
+            <app-card [productId]="product.productId"></app-card>
+        </div>
+    </div>
+</div>
+</div>
+
+

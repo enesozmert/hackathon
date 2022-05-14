@@ -12,6 +12,14 @@ import { RegisterComponent } from './component/register/register.component';
 import { NaviComponent } from './component/navi/navi.component';
 import { CartSummaryComponent } from './component/cart-summary/cart-summary.component';
 import { CategoryComponent } from './component/category/category.component';
+import { ProductComponent } from './component/product/product.component';
+import { CardComponent } from './component/card/card.component';
+import { VatAddedPipe } from './pipes/vat-added.pipe';
+import { FilterPipePipe } from './pipes/filter.pipe';
+import { CameraReadingComponent } from './component/fake-chain/camera-reading/camera-reading.component';
+import { BlockChainTokenComponent } from './component/fake-chain/block-chain-token/block-chain-token.component';
+import { BlockChainConfirmationComponent } from './component/fake-chain/block-chain-confirmation/block-chain-confirmation.component';
+import { ProductAddComponent } from './component/product-add/product-add.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +28,15 @@ import { CategoryComponent } from './component/category/category.component';
     RegisterComponent,
     NaviComponent,
     CartSummaryComponent,
-    CategoryComponent
+    CategoryComponent,
+    ProductComponent,
+    CardComponent,
+    VatAddedPipe,
+    FilterPipePipe,
+    CameraReadingComponent,
+    BlockChainTokenComponent,
+    BlockChainConfirmationComponent,
+    ProductAddComponent,
   ],
   imports: [
     BrowserModule,
