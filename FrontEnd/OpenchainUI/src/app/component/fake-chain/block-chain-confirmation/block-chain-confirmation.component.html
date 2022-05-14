@@ -1,28 +1,31 @@
-<br>
+<br />
 <div class="columns">
-	<div class="column main"><input name="form_key" type="hidden" value="PefvQbePmuX6e2ZN">
-		<div id="authenticationPopup" data-bind="scope:'authenticationPopup'">
-			<div class="success-extras">
-				<i class="far fa-check-circle"></i>
-				<p></p>
-				<p class="success-lrg">
-					Onaylandı
-				</p>
-				<hr class="divider">
-			</div>
-		</div>
-		<div class="checkout-success">
-			<p>Sizin cüzdan hesabınız: <span>***000166954***</span>.</p>
-			<p>Cüzdanınızdan para transfer edilmiştir.</p>
-			<div class="actions-toolbar">
-				<div class="primary">
-					<a class="action primary continue" href="#0">Satış Başarılı</a>
-				</div>
-			</div>
-		</div>
-		<div id="registration" data-bind="scope:'registration'">
-			<br>
-			<div data-role="checkout-messages" class="messages" data-bind="visible: isVisible(), click: removeAll"></div>
-		</div>
-	</div>
+  <div class="column main">
+    <input name="form_key" type="hidden" value="PefvQbePmuX6e2ZN" />
+    <div id="authenticationPopup" data-bind="scope:'authenticationPopup'">
+      <div class="success-extras">
+        <i class="pi pi-check-circle" style="font-size: 2rem"></i>
+        <p></p>
+        <p class="success-lrg">Onaylandı</p>
+        <hr class="divider" />
+      </div>
+    </div>
+    <div class="checkout-success">
+      <p style="color: black;">Sizin cüzdan hesabınız: <span>***000166954***</span>.</p>
+      <p style="color: black;">Cüzdanınızdan para transfer edilmiştir.</p>
+      <div class="actions-toolbar">
+        <div class="primary">
+          <a class="action primary continue" href="#0">Satış Başarılı</a>
+        </div>
+      </div>
+    </div>
+    <div id="registration" data-bind="scope:'registration'">
+      <br />
+      <div
+        data-role="checkout-messages"
+        class="messages"
+        data-bind="visible: isVisible(), click: removeAll"
+      ></div>
+    </div>
+  </div>
 </div>
