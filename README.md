@@ -2,11 +2,9 @@
 # Blockchain sisteminin somut ürünlere entegre edilmesi.
 ## Gerçek dünyada ki ürünlerin nft ve metaverse sisteminde blockchain ile takibi, satışı, escrow sistemi, kullanıcı, satıcı güvenliği ve memnuniyetinin klasik e-ticaret sistemlerine entegrasyonu.
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+Blockchain sisteminin somut ürünlere entegre edilmesi. Eski e-ticaret sistemlerinin metaverse ve yeni e-ticaret sistemleri ile etragsyonudur.
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-
+Bu entegrasyonun çözümleri şunlardır.
 
 - Ödeme
 - Exchange
@@ -17,29 +15,21 @@
 - Escrow
 - Data
 
-## Features
+## Nasıl Kullanılır (Angular)
 
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-- Import and save files from GitHub, Dropbox, Google Drive and One Drive
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
+- İlk önce node.js'e sahip olmamız gerekiyor. Bunun için node.js web sitesinden indiriyoruz.
+- Angular cli bilgisayarımıza global olarak kurduktan sonra projemini clone'luyoruz.
+- Daha sonra angular projelerinin kütüphanelerini install etmeniz gerekiyor bunun için (#npm install) komudunu kullanıyoruz.
+- ng serve --open ile projemizi derleyip servis etmek için bu komudu kullanıyoruz.
+- Projemiz default olarak 4200 portunda çalışmaya başlıyoruz.
 
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
+> node js download
+> npm install -g @angular/cli
+> npm install
+> ng serve --open / ng s --o
+> visit web page http://localhost:4200/
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-Blockchain sisteminin somut ürünlere entegre edilmesi. Eski e-ticaret sistemlerinin metaverse ve yeni e-ticaret sistemleri ile etragsyonudur.
-
-## Tech
+## Nasıl Kullanılır (C# BackEnd-WebApi) 
 
 Dillinger uses a number of open source projects to work properly:
 
