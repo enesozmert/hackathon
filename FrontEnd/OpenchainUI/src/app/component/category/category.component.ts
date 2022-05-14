@@ -20,7 +20,6 @@ export class CategoryComponent implements OnInit {
     this.getCategories()
   }
   getCategories() {
-    console.log("Metot async çalışşır")
     this.categoryService.getCategories().subscribe(response => {
       this.categories = response.data
       this.dataLoaded = true

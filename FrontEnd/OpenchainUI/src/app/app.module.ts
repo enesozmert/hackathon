@@ -6,6 +6,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthInterceptor } from './interceptor/auth.interceptor';
+import { KnobModule } from 'primeng/knob';
 
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
@@ -44,6 +45,7 @@ import { ProductAddComponent } from './component/product-add/product-add.compone
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    KnobModule,
     ToastrModule.forRoot({positionClass:"toast-bottom-right"})
   ],
   providers: [{provide:HTTP_INTERCEPTORS,useClass:AuthInterceptor,multi:true}],

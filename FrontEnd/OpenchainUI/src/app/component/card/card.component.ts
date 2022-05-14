@@ -36,7 +36,6 @@ export class CardComponent implements OnInit {
     this.getProductById(this.productId);
   }
   getProducts() {
-    console.log("Metot async çalışşır")
     this.productService.getProducts().subscribe(response => {
       this.products = response.data
       this.dataLoaded = true
@@ -50,7 +49,6 @@ export class CardComponent implements OnInit {
       })
   }
   getProductsByCategory(categoryId: number) {
-    console.log("Metot async çalışşır")
     this.productService.getProductsByCategoryId(categoryId).subscribe(response => {
       this.products = response.data
       this.dataLoaded = true
@@ -58,7 +56,7 @@ export class CardComponent implements OnInit {
   }
   addToCart(product:Product){
     console.log(product.productName);
-    this.toastrService.success("Added To Cart",product.productName)
+    this.toastrService.success("Sepete eklendi.",product.productName)
     this.cartService.addToCart(product);
   }
 }

@@ -24,7 +24,7 @@
                       <label for="floatingPassword">Şifre</label>
                       <input formControlName="password" type="password" class="form-control" id="floatingPassword" pTooltip="Şifre" (keyup)="keyupPasswordEvent($event)">
                       <div [style]="passwordSecurityKnobClass+''" class="p-0 text-center">
-                          <!-- <p-knob formControlName="passwordsecurity" [(ngModel)]="passwordSecurityKnobValue" valueColor="#FBC658" rangeColor="#EF8157" [readonly]="true" [size]="64"></p-knob> -->
+                          <p-knob formControlName="passwordsecurity" [(ngModel)]="passwordSecurityKnobValue" valueColor="#FBC658" rangeColor="#EF8157" [readonly]="true" [size]="64"></p-knob>
                       </div>
                   </div>
                   <div class="p-2">

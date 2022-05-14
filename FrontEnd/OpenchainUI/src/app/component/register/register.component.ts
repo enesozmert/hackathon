@@ -27,7 +27,6 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this.formBuilder.group({
       "email": ["", Validators.required],
       "password": ["", Validators.required],
-      // "nickName": ["", Validators.required],
       "firstName": ["", Validators.required],
       "lastName": ["", Validators.required],
       "passwordsecurity": ["", Validators.required]
@@ -45,7 +44,7 @@ export class RegisterComponent implements OnInit {
         localStorage.setItem("token", token)
         //console.log(response)
         if (token.length > 0) {
-          this.router.navigate(['/main'])
+          this.router.navigate(['/'])
         }
       }, responseError => {
         this.toastrService.info(responseError.message)

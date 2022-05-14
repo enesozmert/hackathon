@@ -31,14 +31,12 @@ export class ProductComponent implements OnInit {
     this.getProducts()
   }
   getProducts() {
-    console.log("Metot async çalışşır")
     this.productService.getProducts().subscribe(response => {
       this.products = response.data
       this.dataLoaded = true
     })
   }
   getProductsByCategory(categoryId: number) {
-    console.log("Metot async çalışşır")
     this.productService.getProductsByCategoryId(categoryId).subscribe(response => {
       this.products = response.data
       this.dataLoaded = true
