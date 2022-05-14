@@ -47,7 +47,7 @@ export class RegisterComponent implements OnInit {
           this.router.navigate(['/'])
         }
       }, responseError => {
-        this.toastrService.info(responseError.message)
+        //this.toastrService.info(responseError.message)
         //console.log(responseError)
       });
     }

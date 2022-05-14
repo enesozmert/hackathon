@@ -15,7 +15,7 @@ export class AuthService {
     return this.httpClient.post<SingleResponseModel<TokenModel>>(this.apiUrl + "login", loginModel)
   }
   register(registerModel: RegisterModel) {
-    return this.httpClient.post<SingleResponseModel<TokenModel>>(this.apiUrl + "auth/register", registerModel)
+    return this.httpClient.post<SingleResponseModel<TokenModel>>(this.apiUrl + "register", registerModel)
   }
   isAuthenticadet(){
     if (localStorage.getItem("token")) {

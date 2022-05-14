@@ -5,14 +5,16 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a *ngFor="let cartItem of cartItems">
-      <a class="dropdown-item"><span class="badge bg-primary">{{cartItem.quantity}}</span>{{cartItem.product.productName}}
+      <a class="dropdown-item">
+        {{cartItem.product.productName}}
+        <span class="badge bg-primary">{{cartItem.quantity}}</span>
         <span class="badge bg-primary" (click)="removeFromCart(cartItem.product)">Temizle</span>
       </a>
     </a>
     <a>
         <hr class="dropdown-divider">
     </a>
-    <a><a class="dropdown-item" href="#">Alışverişi tamamla.</a></a>
+    <div style="text-align:center"><button type="button" class="btn btn-danger" routerLink="./camera">Alışverişi bitir.</button></div>
   </div>
 </div>
 

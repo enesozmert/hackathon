@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthInterceptor } from './interceptor/auth.interceptor';
 import { KnobModule } from 'primeng/knob';
+import { ImageModule} from 'primeng/image';
 
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
@@ -22,6 +23,8 @@ import { BlockChainTokenComponent } from './component/fake-chain/block-chain-tok
 import { BlockChainConfirmationComponent } from './component/fake-chain/block-chain-confirmation/block-chain-confirmation.component';
 import { ProductAddComponent } from './component/product-add/product-add.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonModule } from 'primeng/button';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -48,6 +51,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     HttpClientModule,
     KnobModule,
+    ImageModule,
+    ButtonModule,
+    CardModule,
     ToastrModule.forRoot({positionClass:"toast-bottom-right"})
   ],
   providers: [{provide:HTTP_INTERCEPTORS,useClass:AuthInterceptor,multi:true}],
