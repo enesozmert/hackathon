@@ -18,8 +18,7 @@ const routes: Routes =
   { path: "login", component: LoginComponent },
   { path: "register", component: RegisterComponent },
   { path: "camera", component: CameraReadingComponent },
-  { path: "blockchaintoken", component: BlockChainTokenComponent },
-  { path: "blockchainfo", component: BlockChainConfirmationComponent },
+  { path: "blockchaintoken", component: BlockChainTokenComponent }
 ];
 
 @NgModule({
