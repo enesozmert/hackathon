@@ -1,3 +1,4 @@
+import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,6 +26,7 @@ import { ProductAddComponent } from './component/product-add/product-add.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import {CardModule} from 'primeng/card';
+import { MyHttpLoadInterceptor } from './interceptor/my-http-load.interceptor';
 
 @NgModule({
   declarations: [
@@ -54,9 +56,15 @@ import {CardModule} from 'primeng/card';
     ImageModule,
     ButtonModule,
     CardModule,
+    NgxSpinnerModule,
     ToastrModule.forRoot({positionClass:"toast-bottom-right"})
   ],
-  providers: [{provide:HTTP_INTERCEPTORS,useClass:AuthInterceptor,multi:true}],
+  providers: [{provide:HTTP_INTERCEPTORS,useClass:AuthInterceptor,multi:true},
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: MyHttpLoadInterceptor,
+      multi: true,
+    },],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
