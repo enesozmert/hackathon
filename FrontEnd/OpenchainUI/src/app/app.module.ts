@@ -21,6 +21,7 @@ import { CameraReadingComponent } from './component/fake-chain/camera-reading/ca
 import { BlockChainTokenComponent } from './component/fake-chain/block-chain-token/block-chain-token.component';
 import { BlockChainConfirmationComponent } from './component/fake-chain/block-chain-confirmation/block-chain-confirmation.component';
 import { ProductAddComponent } from './component/product-add/product-add.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { ProductAddComponent } from './component/product-add/product-add.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,

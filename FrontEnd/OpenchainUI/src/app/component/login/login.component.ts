@@ -34,8 +34,8 @@ export class LoginComponent implements OnInit {
       //console.log(this.loginForm.value)
       let loginModel = Object.assign({}, this.loginForm.value);
       this.authService.login(loginModel).subscribe(response => {
+        console.log("+r32423/" + response.data.token);
         let token:string = response.data.token;
-        console.log(token);
         localStorage.setItem("token", token);
         if(token.length>0){
           this.router.navigate(['/login'])

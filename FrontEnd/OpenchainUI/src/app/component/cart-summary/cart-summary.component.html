@@ -1,13 +1,18 @@
-<li *ngIf="cartItems.length > 0" class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Sepetiniz
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <li *ngFor="let cartItem of cartItems"><a class="dropdown-item"><span class="badge bg-primary">{{cartItem.quantity}}</span>{{cartItem.product.productName}} <span class="badge bg-primary" (click)="removeFromCart(cartItem.product)">Remove</span></a></li>
-      <li><a class="dropdown-item">Temizle</a></li>
-      <li>
-          <hr class="dropdown-divider">
-      </li>
-      <li><a class="dropdown-item" href="#">Sepete git</a></li>
-  </ul>
-</li>
+
+<div *ngIf="cartItems.length > 0" class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+    Sepetiniz
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a *ngFor="let cartItem of cartItems">
+      <a class="dropdown-item"><span class="badge bg-primary">{{cartItem.quantity}}</span>{{cartItem.product.productName}}
+        <span class="badge bg-primary" (click)="removeFromCart(cartItem.product)">Temizle</span>
+      </a>
+    </a>
+    <a>
+        <hr class="dropdown-divider">
+    </a>
+    <a><a class="dropdown-item" href="#">Alışverişi tamamla.</a></a>
+  </div>
+</div>
+
