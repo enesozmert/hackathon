@@ -1,0 +1,42 @@
+<body class="text-center">
+  <main class="form-register">
+      <div class="card card-stats">
+          <div class="card-body ">
+              <form [formGroup]="registerForm">
+                  <h1 class="h3 mb-3 fw-normal">Kayıt Ol.</h1>
+                  <div class="form-floating text-left">
+                      <label for="floatingPassword">Ad</label>
+                      <input formControlName="firstName" type="text" class="form-control" id="floatingInputFirstName" pTooltip="Ad">
+                  </div>
+                  <div class="form-floating text-left">
+                      <label for="floatingPassword">Soyad</label>
+                      <input formControlName="lastName" type="text" class="form-control" id="floatingInputLastName" pTooltip="Soyad">
+                  </div>
+                  <!-- <div class="form-floating p-1">
+                      <input formControlName="nickName" type="text" class="form-control" id="floatingInputNickName" placeholder="Nick Name">
+                      <label for="floatingInput">Nick Name</label>
+                  </div> -->
+                  <div class="form-floating text-left">
+                      <label for="floatingPassword">E-Posta</label>
+                      <input formControlName="email" type="email" class="form-control" id="floatingInput" pTooltip="name@example.com">
+                  </div>
+                  <div class="form-control text-left">
+                      <label for="floatingPassword">Şifre</label>
+                      <input formControlName="password" type="password" class="form-control" id="floatingPassword" pTooltip="Şifre" (keyup)="keyupPasswordEvent($event)">
+                      <div [style]="passwordSecurityKnobClass+''" class="p-0 text-center">
+                          <!-- <p-knob formControlName="passwordsecurity" [(ngModel)]="passwordSecurityKnobValue" valueColor="#FBC658" rangeColor="#EF8157" [readonly]="true" [size]="64"></p-knob> -->
+                      </div>
+                  </div>
+                  <div class="p-2">
+                      <label>Kaydolarak bizim <br> <a routerLink="/#" class="bg-black text-warning">Şartlat & Gizlilk Politika</a>mızı onaylarsınız.</label>
+                  </div>
+                  <button (click)="register()" class="w-100 btn btn-lg btn-danger" type="submit">Kayıt Ol</button>
+                  <div class="p-2">
+                      <label>Hesabınız var mı? <a routerLink="/login" class="text-warning">Giriş Yap</a></label>
+                  </div>
+                  <!-- <p class="mt-5 mb-3 text-muted">&copy; 2020–2021</p> -->
+              </form>
+          </div>
+      </div>
+  </main>
+</body>

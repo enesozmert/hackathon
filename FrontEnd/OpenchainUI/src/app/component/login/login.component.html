@@ -1,0 +1,31 @@
+<body class="text-center">
+  <main class="form-signin">
+      <form [formGroup]="loginForm">
+          <div class="card card-stats">
+              <div class="card-body">
+                  <h1 class="h3 mb-3 fw-normal">Giriş Yap</h1>
+                  <div class="form-floating text-left">
+                      <label for="floatingInput">E-Posta</label>
+                      <input formControlName="email" type="email" class="form-control" id="floatingInput" placeholder="" pTooltip="E-Posta">
+
+                  </div>
+                  <div class="form-floating text-left">
+                      <label for="floatingPassword">Şifre</label>
+                      <input formControlName="password" type="password" class="form-control" id="floatingPassword" placeholder="" pTooltip="Şifre">
+
+                  </div>
+                  <div class="checkbox text-left align-middle">
+                      <label style="vertical-align:middle;">
+                          <input type="checkbox" value="remember-me" style="vertical-align:middle;" > Beni Hatırla
+                      </label>
+                  </div>
+                  <button (click)="login()" class="w-100 btn btn-lg btn-danger" type="submit"><a style="text-transform:capitalize;">Giriş Yap</a></button>
+                  <div class="p-2">
+                      <label>Hesabınız yok mu? <a routerLink="/register" class="text-warning">Kayıt Ol</a></label>
+                  </div>
+              </div>
+          </div>
+          <!-- <p class="mt-5 mb-3 text-muted">&copy; Copyright 2020-.. Intes Technology</p> -->
+      </form>
+  </main>
+</body>
