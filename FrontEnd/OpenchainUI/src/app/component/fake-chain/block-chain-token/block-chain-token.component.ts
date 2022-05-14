@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./block-chain-token.component.css']
 })
 export class BlockChainTokenComponent implements OnInit {
-
+  token:string;
   constructor() { }
 
   ngOnInit(): void {
+    this.token = String(localStorage.getItem("token"));
   }
 
 }

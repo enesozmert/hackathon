@@ -1,17 +1,37 @@
 <div style="text-align: center">
-  <p-image
-    src="https://www.kaspersky.com.tr/content/tr-tr/images/repository/isc/2020/9910/a-guide-to-qr-codes-and-how-to-scan-qr-codes-2.png"
-    alt="Image"
-    width="250"
-    [preview]="true"
-  >
-  </p-image>
   <div class="d-flex justify-content-between">
-
+    <div class="card" >
+      <p-image
+      src="https://www.macmillandictionary.com/external/slideshow/full/emoji_key_full.jpg"
+      alt="Image"
+      width="100"
+      [preview]="true"
+    >
+    </p-image>
+    <p-image
+      src="https://www.freeiconspng.com/thumbs/lock-icon/lock-icon-11.png"
+      alt="Image"
+      width="50"
+      [preview]="true"
+    >
+    </p-image>
+      <div class="card-body">
+        <h5 class="card-title">Ürün ait bilgiler: </h5>
+        <p class="card-text">
+          Bir anahtar ile müşteri, satıcı ve
+          ürün bilgileri block zincirden sorgulandı.
+        </p>
+        <p>Anahtar</p>
+        <p>{{token}}</p>
+      </div>
+    </div>
   </div>
- <div class="d-flex justify-content-between">
-    <button type="button" class="btn btn-danger" routerLink="/blockchaintoken">Geri</button>
-    <button type="button" class="btn btn-primary" routerLink="/blockchainfo">İleri</button>
- </div>
+  <div class="d-flex justify-content-between">
+    <button type="button" class="btn btn-danger" routerLink="/blockchaintoken">
+      Geri
+    </button>
+    <button type="button" class="btn btn-primary" routerLink="/blockchainfo">
+      İleri
+    </button>
+  </div>
 </div>
-
