@@ -23,11 +23,14 @@ Bu entegrasyonun çözümleri şunlardır.
 - ng serve --open ile projemizi derleyip servis etmek için bu komudu kullanıyoruz.
 - Projemiz default olarak 4200 portunda çalışmaya başlıyoruz.
 
-> node js download
-> npm install -g @angular/cli
-> npm install
-> ng serve --open / ng s --o
-> visit web page http://localhost:4200/
+```sh
+  node js download
+  npm install -g @angular/cli
+  npm install
+  ng serve --open / ng s --o
+  visit web page http://localhost:4200/
+```
+
 
 ## Nasıl Kullanılır (C# BackEnd-WebApi) 
 
