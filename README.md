@@ -56,6 +56,16 @@ Angular projesi github repomuzda şu konumdadır. = > https://github.com/enesozm
 ```
 BackEnd projesi github repomuzda şu konumdadır. = > https://github.com/enesozmert/hackathon/tree/main/Backend/MyFinalProje-master
 
+## Mobility (Web Js) 
+
+- Ürünü satın almak için kullanılan qr code jwt token mantığı simile edilir.
+- Web sitesinde yayınladın. wisit => http://nifweb.com/openchain/ 
+
+```sh
+  select (set as startup project)
+  run
+```
+BackEnd projesi github repomuzda şu konumdadır. = > https://github.com/enesozmert/hackathon/tree/main/Mobility
 ## License
 
 MIT
