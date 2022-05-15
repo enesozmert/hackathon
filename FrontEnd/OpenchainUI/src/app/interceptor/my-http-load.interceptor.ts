@@ -36,7 +36,7 @@ export class MyHttpLoadInterceptor implements HttpInterceptor {
           setTimeout(() => {
             /** spinner ends after 5 seconds */
             this.spinner.hide();
-          }, 100);
+          }, 50);
           //console.log("hide");
         }
       })
