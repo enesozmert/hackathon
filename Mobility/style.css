@@ -204,8 +204,8 @@ h1 {
 }
 
 .longfazers {
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: 99%;
     height: 100%;
 }
 
