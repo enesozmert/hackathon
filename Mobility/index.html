@@ -41,7 +41,7 @@
                     <div class="success-extras">
                         <i class="pi pi-check-circle" style="font-size: 2rem"></i>
                         <p></p>
-                        <p class="success-lrg">Onaylandı</p>
+                        <p class="success-lrg">Sipariş Onayı</p>
                         <hr class="divider" />
                     </div>
                 </div>
@@ -50,9 +50,60 @@
                     <p style="color: black;">Cüzdanınızdan para transfer edilmiştir.</p>
                     <div class="actions-toolbar">
                         <div class="primary">
-                            <a class="action primary continue" href="#0">Satış Başarılı</a>
+                            <a class="action red continue" href="javascript:redFunc();">Satış İptal</a>
+                            <a class="action primary continue" href="javascript:onayFunc();">Satış Onay</a>
                         </div>
                     </div>
+                </div>
+                <div id="registration" data-bind="scope:'registration'">
+                    <br />
+                    <div data-role="checkout-messages" class="messages" data-bind="visible: isVisible(), click: removeAll"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="segmentOk">
+
+        <div class="columns">
+            <div class="column main">
+                <input name="form_key" type="hidden" value="PefvQbePmuX6e2ZN" />
+                <div id="authenticationPopup" data-bind="scope:'authenticationPopup'">
+                    <div class="success-extras">
+                        <i class="pi pi-check-circle" style="font-size: 2rem"></i>
+                        <p></p>
+                        <p class="success-lrg">Onaylandı</p>
+                        <hr class="divider" />
+                    </div>
+                </div>
+                <div class="checkout-success">
+                    <p style="color: black;">Chain Kodu Eşleşmesi Başarılı</p>
+                    <br>
+                </div>
+                <div id="registration" data-bind="scope:'registration'">
+                    <br />
+                    <div data-role="checkout-messages" class="messages" data-bind="visible: isVisible(), click: removeAll"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="segmentRed">
+
+        <div class="columns">
+            <div class="column main">
+                <input name="form_key" type="hidden" value="PefvQbePmuX6e2ZN" />
+                <div id="authenticationPopup" data-bind="scope:'authenticationPopup'">
+                    <div class="success-extras-red">
+                        <i class="pi pi-check-circle" style="font-size: 2rem"></i>
+                        <p></p>
+                        <p class="success-lrg">Sipariş İptal Edildi</p>
+                        <hr class="divider-red" />
+                    </div>
+                </div>
+                <div class="checkout-success">
+                    <p style="color: black;">Satın alma işleminiz başarılı bir şekilde ipal edilmiştir.</p>
+                    <p style="color: black;">Lütfen ******** numarası ile XXXX bu ürünü iade edeceğinizi belirtiniz.</p>
                 </div>
                 <div id="registration" data-bind="scope:'registration'">
                     <br />
@@ -74,7 +125,19 @@
                 btn.style.display = "none";
                 console.log(btn); */
             }, 3500)
+
+
         });
+
+        function onayFunc() {
+            document.getElementById("segment2").style.display = "none";
+            document.getElementById("segmentOk").style.display = "block";
+        }
+
+        function redFunc() {
+            document.getElementById("segment2").style.display = "none";
+            document.getElementById("segmentRed").style.display = "block";
+        }
     </script>
 </body>
 

@@ -25,6 +25,14 @@ h1 {
     display: none;
 }
 
+#segmentRed {
+    display: none;
+}
+
+#segmentOk {
+    display: none;
+}
+
 .body {
     position: absolute;
     top: 50%;
@@ -306,8 +314,28 @@ h1 {
     margin-bottom: 40px;
 }
 
+.divider-red {
+    width: 40%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff006f;
+    border: 0 none;
+    margin-top: 14px;
+    margin-bottom: 40px;
+}
+
 .success-extras p {
     color: #007BFF;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0 0 20px 0;
+    line-height: 1.2em;
+}
+
+.success-extras-red p {
+    color: #ff006f;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2em;
     font-weight: 300;
@@ -327,6 +355,21 @@ p.success-lrg {
 
 .action.primary {
     background: #007BFF;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 20px 20px;
+    margin: 20px 0 0 0;
+    text-decoration: none;
+}
+
+.action.red {
+    background: #ff006a;
     border: none;
     color: #fff;
     display: inline-block;
